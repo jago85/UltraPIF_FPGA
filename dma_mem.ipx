@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="dma_mem" module="dma_mem" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2017 06 30 16:39:31.728" version="7.5" type="Module" synthesis="lse" source_format="VHDL">
+  <Package>
+		<File name="" type="" modified="2017 06 30 16:39:31.656"/>
+		<File name="dma_mem.lpc" type="lpc" modified="2017 06 30 16:39:30.320"/>
+		<File name="dma_mem.vhd" type="top_level_vhdl" modified="2017 06 30 16:39:30.347"/>
+		<File name="dma_mem_tmpl.vhd" type="template_vhdl" modified="2017 06 30 16:39:30.348"/>
+		<File name="tb_dma_mem_tmpl.vhd" type="testbench_vhdl" modified="2017 06 30 16:39:30.366"/>
+  </Package>
+</DiamondModule>

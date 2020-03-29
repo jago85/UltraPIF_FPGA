@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="pif_ram" module="pif_ram" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2017 07 13 19:18:46.571" version="7.5" type="Module" synthesis="lse" source_format="VHDL">
+  <Package>
+		<File name="" type="" modified="2017 07 13 19:18:47.323"/>
+		<File name="pif_ram.lpc" type="lpc" modified="2017 07 13 19:18:45.798"/>
+		<File name="pif_ram.vhd" type="top_level_vhdl" modified="2017 07 13 19:18:45.826"/>
+		<File name="pif_ram_tmpl.vhd" type="template_vhdl" modified="2017 07 13 19:18:45.827"/>
+		<File name="tb_pif_ram_tmpl.vhd" type="testbench_vhdl" modified="2017 07 13 19:18:45.829"/>
+  </Package>
+</DiamondModule>

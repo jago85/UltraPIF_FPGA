@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="pif_rom" module="ROM" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2017 06 28 19:30:54.847" version="5.4" type="Module" synthesis="lse" source_format="VHDL">
+  <Package>
+		<File name="" type="" modified="2017 06 28 19:30:54.709"/>
+		<File name="e:/programming/vhdl/lattice/machxo2_breakout/pif_test/pifrom_pal.mem" type="mem" modified="2017 02 14 20:10:26.950"/>
+		<File name="pif_rom.lpc" type="lpc" modified="2017 06 28 19:30:53.347"/>
+		<File name="pif_rom.vhd" type="top_level_vhdl" modified="2017 06 28 19:30:53.387"/>
+		<File name="pif_rom_tmpl.vhd" type="template_vhdl" modified="2017 06 28 19:30:53.387"/>
+		<File name="tb_pif_rom_tmpl.vhd" type="testbench_vhdl" modified="2017 06 28 19:30:53.390"/>
+  </Package>
+</DiamondModule>
