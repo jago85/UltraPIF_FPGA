@@ -19,7 +19,7 @@ entity top is
 		   INT_CPU_O : out STD_LOGIC;
 		   
 		   RESET_BTN_I : in STD_LOGIC;
-           RESET_BTN_O : out STD_LOGIC;
+           RESET_PAD_I : in STD_LOGIC;
 		   
 		   CTRL_O : out STD_LOGIC_VECTOR(3 downto 0);
 		   CTRL_I : in STD_LOGIC_VECTOR(3 downto 0);
@@ -195,7 +195,7 @@ port (
 );
 end component;
 
-constant FPGA_VERSION : std_logic_vector(31 downto 0) := x"01000400";
+constant FPGA_VERSION : std_logic_vector(31 downto 0) := x"01000500";
 
 constant REG_SPICR1     : std_logic_vector(7 downto 0) := x"55";
 constant REG_SPITXDR    : std_logic_vector(7 downto 0) := x"59";
@@ -1079,8 +1079,6 @@ with spiByteSel(0) select spiSelectedRegisterByte <=
     spiSelectedRegister(15 downto 8) when others;
     
 NIRQ_O <= '0' when spiRegPifIrq /= (spiRegPifIrq'range => '0') else '1';
-
-RESET_BTN_O <= rst_btn_ff2;
     
 process (clk)
 begin
@@ -1101,7 +1099,7 @@ begin
             pif_clk <= PIF_CLK_I;
             pif_clk_d1 <= pif_clk;
             pif_adr <= PIF_ADR_I;
-            rst_btn_ff <= RESET_BTN_I;
+            rst_btn_ff <= RESET_BTN_I and RESET_PAD_I;
             rst_btn_ff2 <= rst_btn_ff;
             rc_por_ff <= RC_POR_I;
             rc_por_ff2 <= rc_por_ff;
