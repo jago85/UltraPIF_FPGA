@@ -162,7 +162,9 @@ begin
             case ifState is
             when S_IDLE =>
                 -- sending data is synchronous to the falling edge of the serial clock
-                -- data is received using oversampling (each bit is synchronized at the falling edge and sampled in the middle)
+                -- data is received by counting the clocks while the signal is low and high
+                -- the value of the received bit is determined by comparing the low and high
+                -- times on the falling edge of the next data bit or stop bit
                 if serial_out_tick = '1' then 
                     if hasNextData_ff2 = '1' then
                         shiftOut <= nextData;
